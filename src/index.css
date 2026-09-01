@@ -1,0 +1,155 @@
+@import "tailwindcss";
+
+@theme {
+  --font-vazirmatn: 'Vazirmatn', sans-serif;
+
+  --color-neutral-50: #fafafa;
+  --color-neutral-100: #f5f5f5;
+  --color-neutral-200: #e5e5e5;
+  --color-neutral-300: #d4d4d4;
+  --color-neutral-400: #a3a3a3;
+  --color-neutral-500: #737373;
+  --color-neutral-600: #525252;
+  --color-neutral-700: #404040;
+  --color-neutral-800: #262626;
+  --color-neutral-900: #0a0a0a;
+
+  --color-orange-50: #eef1ff;
+  --color-orange-100: #dfe7ff;
+  --color-orange-200: #c7d2ff;
+  --color-orange-300: #a6baff;
+  --color-orange-400: #7d96ff;
+  --color-orange-500: #4B6BFF;
+  --color-orange-600: #3352f5;
+  --color-orange-700: #2a3fd8;
+  --color-orange-800: #2635ae;
+  --color-orange-900: #243088;
+  --color-orange-950: #141c4d;
+
+  --color-teal-50: #f0fdfa;
+  --color-teal-100: #ccfbf1;
+  --color-teal-200: #99f6e4;
+  --color-teal-300: #5eead4;
+  --color-teal-400: #2dd4bf;
+  --color-teal-500: #14b8a6;
+  --color-teal-600: #0d9488;
+  --color-teal-700: #0f766e;
+  --color-teal-800: #115e59;
+  --color-teal-900: #134e4a;
+}
+
+:root {
+  color-scheme: dark;
+  --c-bg: #0a0a0a;
+  --c-surface: rgba(255, 255, 255, 0.05);
+  --c-surface-hover: rgba(255, 255, 255, 0.1);
+  --c-border: rgba(255, 255, 255, 0.1);
+  --c-border-soft: rgba(255, 255, 255, 0.05);
+  --c-text: #ffffff;
+  --c-text-muted: #d4d4d4;
+  --c-text-faint: #a3a3a3;
+  --c-primary: #4B6BFF;
+  --c-primary-hover: #3352f5;
+  --c-primary-soft: rgba(36, 48, 136, 0.4);
+  --c-primary-text: #7d96ff;
+  --c-code-bg: #404040;
+  --c-code-text: #7d96ff;
+  --liquid-a: #3352f5;
+  --liquid-b: #2635ae;
+  --particle-rgb: 75, 107, 255;
+  --icon-filter: none;
+}
+
+@theme inline {
+  --color-bg: var(--c-bg);
+  --color-surface: var(--c-surface);
+  --color-surface-hover: var(--c-surface-hover);
+  --color-border: var(--c-border);
+  --color-border-soft: var(--c-border-soft);
+  --color-text: var(--c-text);
+  --color-text-muted: var(--c-text-muted);
+  --color-text-faint: var(--c-text-faint);
+  --color-primary: var(--c-primary);
+  --color-primary-hover: var(--c-primary-hover);
+  --color-primary-soft: var(--c-primary-soft);
+  --color-primary-text: var(--c-primary-text);
+  --color-primary-50: var(--color-orange-50);
+  --color-primary-100: var(--color-orange-100);
+  --color-primary-200: var(--color-orange-200);
+  --color-primary-300: var(--color-orange-300);
+  --color-primary-400: var(--color-orange-400);
+  --color-primary-500: var(--color-orange-500);
+  --color-primary-600: var(--color-orange-600);
+  --color-primary-700: var(--color-orange-700);
+  --color-primary-800: var(--color-orange-800);
+  --color-primary-900: var(--color-orange-900);
+  --color-primary-950: var(--color-orange-950);
+  --color-code-bg: var(--c-code-bg);
+  --color-code-text: var(--c-code-text);
+}
+
+@layer base {
+  html {
+    direction: rtl;
+    font-family: var(--font-vazirmatn);
+  }
+
+  body {
+    @apply bg-bg text-text antialiased;
+  }
+}
+
+@layer utilities {
+  .filter-theme {
+    filter: var(--icon-filter);
+  }
+
+  .btn-liquid {
+    background: linear-gradient(270deg, var(--liquid-a), var(--liquid-b), var(--liquid-a));
+    background-size: 200% 200%;
+    background-position: 0% 50%;
+    transition: background-position 0.7s ease-in-out;
+  }
+
+  .btn-liquid:hover {
+    background-position: 100% 50%;
+  }
+
+  .btn-liquid:active {
+    background-position: 50% 50%;
+  }
+}
+
+@media print {
+  @page {
+    margin: 0.5cm;
+    size: A4;
+  }
+
+  body {
+    background: white !important;
+    color: black !important;
+    font-size: 12pt;
+  }
+
+  .no-print {
+    display: none !important;
+  }
+
+  .print-expand {
+    max-height: none !important;
+    overflow: visible !important;
+    opacity: 1 !important;
+  }
+
+  * {
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a {
+    text-decoration: none !important;
+    color: black !important;
+  }
+}
+

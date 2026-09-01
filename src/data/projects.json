@@ -1,0 +1,84 @@
+[
+  {
+    "id": "ehsandesign1",
+    "title": "طراحی پست اینستاگرام",
+    "date": "1399-04",
+    "endDate": "1399-08",
+    "state": "completed",
+    "isTeamWork": false,
+    "thumbnail": "/images/post_design.jpg",
+    "skills": [1,2,11],
+    "contentFile": "/content/ehsandesign1.md"
+  },
+  {
+    "id": "ehsandesign_logo",
+    "title": "طراحی لوگو شخصی",
+    "date": "1399-05",
+    "endDate": "1405-05",
+    "state": "completed",
+    "isTeamWork": false,
+    "thumbnail": "/images/personal_logo.jpg",
+    "skills": [2,11,12,13],
+    "contentFile": "/content/logo-design.md"
+  },
+  {
+    "id": "Mojba",
+    "title": "وب سایت مجبا",
+    "date": "1402-11",
+    "endDate": "هم اکنون",
+    "state": "in-progress",
+    "isTeamWork": true,
+    "otherSignatures": ["/images/Decode-logos.png"],
+    "thumbnail": "/images/mojba_old_ui.jpg",
+    "skills": [1,2,3,5,6,7,8,11,12,14],
+    "contentFile": "/content/mojba-project.md"
+  },
+  {
+    "id": "triple_qoute",
+    "title": "لوگو triple qoutes",
+    "date": "1400-05",
+    "endDate": "1400-07",
+    "state": "completed",
+    "isTeamWork": false,
+    "otherSignatures": [],
+    "thumbnail": "/images/triple-logo-design-final.jpg",
+    "skills": [2,11,12,13],
+    "contentFile": "/content/triple_qoute.md"
+  },
+  {
+    "id": "decode1",
+    "title": " لوگو تیم Decode",
+    "date": "1402-04",
+    "endDate": "1402-07",
+    "state": "completed",
+    "isTeamWork": true,
+    "otherSignatures": [],
+    "thumbnail": "/images/Decode-logos-bw.jpg",
+    "skills": [1,2,11,12],
+    "contentFile": "/content/decodelogo.md"
+  },
+  {
+    "id": "decode2",
+    "title": "طراحی رابط کاربری سایت Decode",
+    "date": "1402-04",
+    "endDate": "1402-07",
+    "state": "completed",
+    "isTeamWork": true,
+    "otherSignatures": ["/images/Decode-logos.png"],
+    "thumbnail": "/images/Decode_thumb.jpg",
+    "skills": [1,2,3,6,7,11,12],
+    "contentFile": "/content/decodeUI.md"
+  },
+  {
+    "id": "lock-in-amp",
+    "title": "توسعه الگوریتم اسختراج فاز با الهام از lock-in amplifier",
+    "date": "1404-04",
+    "endDate": "1404-09",
+    "state": "completed",
+    "isTeamWork": true,
+    "otherSignatures": ["/images/seta_logo.png"],
+    "thumbnail": "/images/lock_in_project.png",
+    "skills": [4,5,9,10,12,14],
+    "contentFile": "/content/lock_in_project.md"
+  }
+]

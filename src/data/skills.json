@@ -1,0 +1,17 @@
+[
+  { "id": 1, "name": "فتوشاپ", "level": 8, "icon": "/icons/photoshop.svg" },
+  { "id": 2, "name": "ایلاستریتور", "level": 6, "icon": "/icons/illustrator.svg" },
+  { "id": 3, "name": "فیگما", "level": 8, "icon": "/icons/figma.svg" },
+  { "id": 4, "name": "زبان انگلیسی", "level": 6, "icon": "/icons/languages.svg" },
+  { "id": 5, "name": "پایتون", "level": 4, "icon": "/icons/python.svg" },
+  { "id": 6, "name": "طراحی رابط کاربری ", "level": 8, "icon": "/icons/wallpaper.svg" },
+  { "id": 7, "name": "طراحی تجربه کاربری", "level": 8, "icon": "/icons/blocks.svg" },
+  { "id": 8, "name": "طراحی محصول", "level": 7, "icon": "/icons/package.svg" },
+  { "id": 9, "name": "مهندسی برق", "level": 4, "icon": "/icons/zap.svg" },
+  { "id": 10, "name": "تحلیل داده", "level": 2, "icon": "/icons/chart.svg" },
+  { "id": 11, "name": "طراحی گرافیک", "level": 7, "icon": "/icons/graphic_design.svg" },
+  { "id": 12, "name": "حل مسئله", "level": 8, "icon": "/icons/brain.svg" },
+  { "id": 13, "name": "طراحی لوگو", "level": 5, "icon": "/icons/pen.svg" },
+  { "id": 14, "name": "برنامه نویسی", "level": 6, "icon": "/icons/code.svg" }
+
+]
